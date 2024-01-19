@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Aggregator</title>
+    <style>
+        body {
+            background-color: #fff;
+            color: #000;
+            font-family: Arial, sans-serif;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Title Aggregator</h1>
+    <ul>
+        {% for title in titles %}
+            <li><a href="{{ title.link }}" target="_blank">{{ title.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+
